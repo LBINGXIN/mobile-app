@@ -1,0 +1,40 @@
+$u-main-color: #393b3d;
+$u-content-color: #727579;
+$u-tips-color: #909399;
+$u-light-color: #bbbdbf;
+$u-border-color: #9b9ea1;
+$u-bg-color: #f5f5f5;
+$u-disabled-color: #bbbdbf;
+
+$u-primary: #0070d2;
+$u-primary-dark: #0b83de;
+$u-primary-disabled: #9acafc;
+$u-primary-light: #edf3f7;
+
+$u-warning: #e6710b;
+$u-warning-dark: #e6710b;
+$u-warning-disabled: #f9d39b;
+$u-warning-light: #fff7ee;
+
+$u-success: #0d9e31;
+$u-success-dark: #0d9e31;
+$u-success-disabled: #a9e08f;
+$u-success-light: #dff2e5;
+
+$u-error: #cf2613;
+$u-error-dark: #cf2613;
+$u-error-disabled: #f7b2b2;
+$u-error-light: #f8e5e5;
+
+$u-info: #909399;
+$u-info-dark: #767a82;
+$u-info-disabled: #c4c6c9;
+$u-info-light: #f4f4f5;
+
+// scss混入，为了少写几行#ifndef
+@mixin flex($direction: row) {
+  /* #ifndef APP-NVUE */
+  display: flex;
+  /* #endif */
+  flex-direction: $direction;
+}
