@@ -63,13 +63,10 @@ export default {
       uni.$ec.route(item.path);
     },
     handleClick() {
-      console.log(112123123);
-      uni.showToast({
-        title: 'xxxxxxxxxxxxxxxxxxx',
-        icon: 'none',
-      });
-      debugger;
-      // this.$permission.checkToken();
+		uni.clearStorageSync();
+      setTimeout(() => {
+		  this.$permission.checkToken();
+	  }, 2000)
     },
   },
 };
